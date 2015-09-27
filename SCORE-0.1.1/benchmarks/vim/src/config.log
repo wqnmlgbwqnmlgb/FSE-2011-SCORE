@@ -1,0 +1,179 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:539: checking whether make sets ${MAKE}
+configure:569: checking for gcc
+configure:646: checking whether the C compiler (gcc  ) works
+configure:660: gcc -o conftest    conftest.c  1>&5
+configure:680: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:685: checking whether we are using GNU C
+configure:709: checking whether gcc accepts -g
+configure:736: checking how to run the C preprocessor
+configure:796: checking for POSIXized ISC
+configure:820: checking for mawk
+configure:888: checking for buggy tools
+configure:895: checking if perlinterp option enabled
+configure:983: checking if pythoninterp option enabled
+configure:2233: checking --enable-gui option
+configure:2458: checking for sequent/ptx
+configure:2483: checking for tgetent in -lncurses
+configure:2673: checking whether we talk terminfo
+configure:2682: gcc -o conftest -g -O2 -Wall -Wshadow   conftest.c -lncurses  1>&5
+configure:2679: warning: return type defaults to 'int'
+configure: In function 'main':
+configure:2679: warning: implicit declaration of function 'exit'
+configure:2679: warning: incompatible implicit declaration of built-in function 'exit'
+configure:2679: warning: implicit declaration of function 'strcmp'
+configure:2679: warning: implicit declaration of function 'tgoto'
+configure: failed program was:
+#line 2678 "configure"
+#include "confdefs.h"
+main() { exit(strcmp(tgoto("%p1%d", 0, 1), "1") ? 0 : 1); }
+configure:2700: checking quality of toupper
+configure:2710: gcc -o conftest -g -O2 -Wall -Wshadow   conftest.c -lncurses  1>&5
+configure:2707: warning: return type defaults to 'int'
+configure: In function 'main':
+configure:2707: warning: implicit declaration of function 'exit'
+configure:2707: warning: incompatible implicit declaration of built-in function 'exit'
+configure: failed program was:
+#line 2705 "configure"
+#include "confdefs.h"
+#include <ctype.h>
+main() { exit(toupper('A') == 'A' && tolower('z') == 'z'); }
+configure:2727: checking whether __DATE__ and __TIME__ work
+configure:2736: gcc -c -g -O2 -Wall -Wshadow  conftest.c 1>&5
+configure: In function 'main':
+configure:2732: warning: implicit declaration of function 'fprintf'
+configure:2732: warning: incompatible implicit declaration of built-in function 'fprintf'
+configure:2732: error: too few arguments to function 'fprintf'
+configure: failed program was:
+#line 2729 "configure"
+#include "confdefs.h"
+
+int main() {
+fprintf("(" __DATE__ " " __TIME__ ")");
+; return 0; }
+configure:2752: checking for elf.h
+configure:2787: checking for main in -lelf
+configure:2835: checking for dirent.h that defines DIR
+configure:2873: checking for opendir in -ldir
+configure:2957: checking for ANSI C header files
+configure:3061: checking for sys/wait.h that is POSIX.1 compatible
+configure:3142: checking for stdlib.h
+configure:3142: checking for string.h
+configure:3142: checking for sys/select.h
+configure:3142: checking for sys/utsname.h
+configure:3142: checking for termcap.h
+configure:3142: checking for fcntl.h
+configure:3142: checking for sgtty.h
+configure:3142: checking for sys/ioctl.h
+configure:3142: checking for sys/time.h
+configure:3142: checking for termio.h
+configure:3142: checking for unistd.h
+configure:3142: checking for stropts.h
+configure:3142: checking for errno.h
+configure:3142: checking for strings.h
+configure:3142: checking for sys/systeminfo.h
+configure:3142: checking for locale.h
+configure:3142: checking for sys/stream.h
+configure:3142: checking for sys/ptem.h
+configure:3142: checking for termios.h
+configure:3142: checking for libc.h
+configure:3142: checking for sys/statfs.h
+configure:3142: checking for poll.h
+configure:3142: checking for sys/poll.h
+configure:3142: checking for pwd.h
+configure:3142: checking for utime.h
+configure:3142: checking for sys/param.h
+configure:3181: checking whether gcc needs -traditional
+configure:3227: checking for working const
+configure:3302: checking for mode_t
+configure:3335: checking for off_t
+configure:3368: checking for pid_t
+configure:3401: checking for size_t
+configure:3434: checking for uid_t in sys/types.h
+configure:3468: checking whether time.h and sys/time.h may both be included
+configure:3504: checking whether termcap.h contains ospeed
+configure:3517: gcc -o conftest -g -O2 -Wall -Wshadow   conftest.c -lelf -lncurses  1>&5
+configure:3561: checking whether termcap.h contains UP, BC and PC
+configure:3574: gcc -o conftest -g -O2 -Wall -Wshadow   conftest.c -lelf -lncurses  1>&5
+configure:3618: checking whether tputs() uses outfuntype
+configure:3631: gcc -c -g -O2 -Wall -Wshadow  conftest.c 1>&5
+configure: In function 'main':
+configure:3627: error: 'outfuntype' undeclared (first use in this function)
+configure:3627: error: (Each undeclared identifier is reported only once
+configure:3627: error: for each function it appears in.)
+configure:3627: error: expected ')' before 'xx'
+configure: failed program was:
+#line 3620 "configure"
+#include "confdefs.h"
+
+#ifdef HAVE_TERMCAP_H
+# include <termcap.h>
+#endif
+			
+int main() {
+extern int xx(); tputs("test", 1, (outfuntype)xx)
+; return 0; }
+configure:3646: checking whether sys/select.h and sys/time.h may both be included
+configure:3658: gcc -c -g -O2 -Wall -Wshadow  conftest.c 1>&5
+configure:3675: checking return type of signal handlers
+configure:3729: checking getcwd implementation
+configure:3746: gcc -o conftest -g -O2 -Wall -Wshadow   conftest.c -lelf -lncurses  1>&5
+configure:3738: warning: return type defaults to 'int'
+configure: In function 'main':
+configure:3742: warning: implicit declaration of function 'getcwd'
+configure:3769: checking for bcmp
+configure:3769: checking for fchdir
+configure:3769: checking for fchown
+configure:3769: checking for fsync
+configure:3769: checking for getcwd
+configure:3769: checking for getpwnam
+configure:3769: checking for getpwuid
+configure:3769: checking for gettimeofday
+configure:3769: checking for getwd
+configure:3769: checking for lstat
+configure:3769: checking for memcmp
+configure:3769: checking for memset
+configure:3769: checking for opendir
+configure:3769: checking for putenv
+configure:3769: checking for qsort
+configure:3769: checking for select
+configure:3769: checking for setenv
+configure:3769: checking for setpgid
+configure:3769: checking for setsid
+configure:3769: checking for sigset
+configure:3769: checking for strcasecmp
+configure:3769: checking for strerror
+configure:3769: checking for strftime
+configure:3769: checking for stricmp
+configure:3769: checking for strncasecmp
+configure:3769: checking for strnicmp
+configure:3769: checking for strpbrk
+configure:3769: checking for strtol
+configure:3769: checking for tgetent
+configure:3769: checking for utime
+configure:3769: checking for utimes
+configure:3823: checking for st_blksize
+configure:3837: gcc -c -g -O2 -Wall -Wshadow  conftest.c 1>&5
+configure:3852: checking for rename
+configure:3861: gcc -o conftest -g -O2 -Wall -Wshadow   conftest.c -lelf -lncurses  1>&5
+configure:3876: checking size of int
+configure:3916: checking whether memmove/bcopy/memcpy handle overlaps
+configure:3940: gcc -o conftest -g -O2 -Wall -Wshadow   conftest.c -lelf -lncurses  1>&5
+configure:3938: warning: return type defaults to 'int'
+configure: In function 'main':
+configure:3940: warning: implicit declaration of function 'strcpy'
+configure:3940: warning: incompatible implicit declaration of built-in function 'strcpy'
+configure:3941: warning: implicit declaration of function 'memmove'
+configure:3941: warning: incompatible implicit declaration of built-in function 'memmove'
+configure:3942: warning: implicit declaration of function 'strncmp'
+configure:3943: warning: implicit declaration of function 'exit'
+configure:3943: warning: incompatible implicit declaration of built-in function 'exit'
+configure:4001: checking how to create tags
+etags: Unknown option: -c
+ctags: Unknown option: -t
+ctags: Unknown option: -t
+ctags: Unknown option: -t
+ctags: Unknown option: -i
+configure:4014: checking for BeOS

@@ -1,0 +1,90 @@
+The state of a client must be one of the following four states, EMPTY, 
+HAS_1TC, HAS_MTC, and SERVING_REQ[1]. The server estimates the states 
+of clients by tracking control messages between the server and the client. 
+Here is the state transition diagram for estimated client status in the 
+view point of the server. "C" indicates the corresponding client, "C'" 
+indicates the client node which sent TC pairs to the corresponding client 
+'C' when the server sends REQ to "C'" and "S" indicates the server. 
+
+         C sends ACK 
+         or NACK to S 
+            _
+           | |     C sends
+           v |     REQ_TC to S
+          EMPTY _<---------- HAS_1TC
+           |^ |\             / ^
+           ||   \<-C sends  /  |
+           ||    \ REQ_TC  /   |
+           ||     \ to S  /    |
+           ||      \     /     |  
+C' sends ->||<-     \   /<-    |
+ACK to S   ||C sends \ /C sends| <- C sends
+           ||REQ_TC   X HAS_MTC|    NACK to S
+           ||to S    / \ _AGAIN|
+           ||       /   \ to S |
+           ||      /     \     |
+           ||     /       \    |
+           ||    / C sends \   |
+           v|  |/_ ACK to S \  |
+        HAS_MTC <--------- SERVING_REQ
+                 -------->
+                  S sends
+                  REQ to C
+
+
+There exist 9 transitions in the state transition diagram. 
+
+1. EMPTY -> EMPTY
+  If the client was in the SERVING_REQ state when it sent REQ_TC to S, 
+  the client would send ACK or NACK as a response control message to 
+  REQ message. The server should handle the response message when 
+  the corresponding client is in the EMPTY state. 
+
+2. HAS_1TC -> EMPTY
+  The client sends REQ_TC to the server when the client has 1 TC pair 
+  in its TC pair queue and it fails to generate a new test case, the client 
+  sends REQ_TC to the server and the state goes to EMPTY. 
+
+3. EMPTY -> HAS_MTC
+  The state of the client C becomes HAS_MTC when another client C' sends
+  TC pairs to C and sends ACK to the server. 
+
+4. HAS_MTC -> EMPTY
+  The state of the client C becomes EMPTY when the client C sends REQ_TC 
+  to the server in the HAS_MTC state. 
+
+5. SERVING_REQ -> EMPTY
+  The state of the client C becomes EMPTY when the client C sends REQ_TC
+  to the server in the SERVING_REQ. This is possible in the following scenario.
+    (1) Suppose that C is in the HAS_MTC state. 
+    (2) S sends REQ to C and changes the state of C to SERVING_REQ.
+    (3) C sends REQ_TC before REQ message is reached to C
+  In this scenario, C will send NACK to the server as described in 
+  1. EMPTY -> EMPTY transition. 
+
+
+6. HAS_1TC -> HAS_MTC
+  The state of the client C becomes HAS_MTC when the client C sends 
+  HAS_MTC_AGAIN to S. 
+
+7. SERVING_REQ -> HAS_1TC
+  The state of the client C becomes HAS_1TC when the client C sends NACK
+  to the server in the SERVING_REQ. It means that the TC pair queue of the
+  client C is not empty, but has only one TC pair. Thus, it is not adequate to 
+  transfer TC pairs to another client because if doing so, the TC pair queue
+  of the client C will become empty. 
+
+8. SERVING_REQ -> HAS_MTC
+  The state of the client C becomes HAS_MTC when the client C sends ACK
+  to the server in the SERVING_REQ. It means that the client C transferred 
+  TC pairs to another client that request TC pairs to server by sending REQ_TC.
+
+9. HAS_MTC -> SERVING_REQ
+  The state of the client C becomes SERVING_REQ when the server sends REQ to C
+  with the IP address of the receiver client. A client should send a response 
+  message(ACK or NACK) to the server to report the TC pairs are successfully 
+  transferred or not.
+
+
+[1] M.Kim, Y.Kim and G.Rothermel, "A Scalable Distributed Concolic 
+    Testing Approach: An Empirical Evaluation", ICST 2012
