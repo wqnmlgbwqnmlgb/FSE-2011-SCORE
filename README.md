@@ -11,4 +11,5 @@ The Source Code is available in this repository.
 
 In this repository, for SCORE you will find:
 :white_check_mark: Source code (available)
+:white_check_mark: [binary](http://swtv.kaist.ac.kr/tools/score)
 
