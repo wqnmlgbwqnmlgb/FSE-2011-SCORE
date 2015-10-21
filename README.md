@@ -12,3 +12,4 @@ The Source Code is available in this repository.
 In this repository, for SCORE you will find:
 :white_check_mark: Source code (available)
 
+This repository was constructed by [Shraddha Naik](https://github.com/Shraddha512) under the supervision of [Dr. Emerson Murphy-Hill](https://github.com/CaptainEmerson)
