@@ -1,4 +1,4 @@
-#### Contents 
+#### Contents:
 
 1. **Vagrantfile** - That will load the Ubuntu 14.04 Desktop VM on VirtualBox.
 2. **script.sh**  - The script that will install all the requirements for the tool to run.
@@ -17,7 +17,7 @@
  ```
 This will install the required softwares.
 
-#### Following is installed through the script
+#### Installed:
 
 1. Ubuntu Desktop 14.04.
 2. gcc packages
