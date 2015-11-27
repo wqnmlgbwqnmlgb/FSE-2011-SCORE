@@ -1,15 +1,8 @@
 #!/bin/bash
 
-sudo bash
-cd Desktop
-echo ********* INSTALLING gcc packages **********
-sudo apt-get install -y gcc-multilib
-sudo apt-get install -y g++-multilib
-echo ********* INSTALLING OCAML **********
-sudo apt-get install -y ocaml
-echo ********* INSTALLING make **********
-sudo apt-get install -y make
 
-cd ../../../usr/lib/ocaml/
-echo ********* Setting symlinks **********
-sudo ln -s libcamlstr.a libstr.a
+sudo apt-get install git
+git pull 
+sudo apt-get install sshpass
+
+sshpass -p vagrant ssh vagrant@vagrant DISPLAY=:0.0 gnome-terminal --working-directory=/home/vagrant/Desktop --title=irssi --command "./install.sh"sshpass -p vagrant ssh vagrant@vagrant DISPLAY=:0.0 xterm -hold -e " ./Desktop/install.sh; echo "hello""
