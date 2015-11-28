@@ -1,8 +1,7 @@
 # Vagrant configuration
 Vagrant.configure(2) do |config|
   # Configures the base vagrant box found in https://atlas.hashicorp.com/
-  config.vm.box = "boxcutter/ubuntu1504-desktop"
-
+  config.vm.box = "boxcutter/ubuntu1404-desktop"
   # Configure the VirtualBox provider for the VM
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine
