@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=SCORE
+Exec=gnome-terminal -e "bash -c './Desktop/install.sh;$SHELL'"
+Terminal=true
+Type=Application

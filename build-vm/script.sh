@@ -1,8 +1,14 @@
 #!/bin/bash
 
+cd Desktop
+sudo apt-get -y install git
+sudo git clone https://github.com/SoftwareEngineeringToolDemos/FSE-2011-SCORE.git
+cd FSE-2011-SCORE/build-vm/contents
+sudo cp install.sh ../../../install.sh
+sudo cp SCORE.desktop ../../../SCORE.desktop
 
-sudo apt-get install git
-git pull 
-sudo apt-get install sshpass
+sudo mkdir "/home/vagrant/.config/autostart"
+sudo cp Desktop/SCORE.desktop /home/vagrant/.config/autostart/SCORE.desktop
 
-sshpass -p vagrant ssh vagrant@vagrant DISPLAY=:0.0 gnome-terminal --working-directory=/home/vagrant/Desktop --title=irssi --command "./install.sh"sshpass -p vagrant ssh vagrant@vagrant DISPLAY=:0.0 xterm -hold -e " ./Desktop/install.sh; echo "hello""
+
+sudo reboot
