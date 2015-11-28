@@ -18,7 +18,7 @@ cd home/vagrant/
 export PATH=/usr/lib:$PATH
 export PATH=/usr/local/lib:$PATH
 
-cd Desktop/SCORE-0.1.1/
+cd SCORE-0.1.1/
 export PATH=`pwd`/bin:$PATH
 
 export LD_LIBRARY_PATH=`pwd`/lib
