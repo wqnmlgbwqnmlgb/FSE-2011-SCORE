@@ -24,7 +24,7 @@ VIDEO
 =====
 Click on video_score on the Desktop
 Click on run(it will redirect you to the youtube link)
-YouTube link : http://youtu.be/bS-3pzrH9co?hd=1
+YouTube link : https://www.youtube.com/watch?v=bS-3pzrH9co&feature=youtu.be&hd=1
 
 USER &PASSWORD
 ==============

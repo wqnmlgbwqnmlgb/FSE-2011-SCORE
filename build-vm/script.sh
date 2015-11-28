@@ -24,7 +24,7 @@ sudo cp README.txt ../../../README.txt
 
 sudo cp Installation.txt ../../../Installation.txt
 
-sudo cp video_score ../../../video_score.txt
+sudo cp video_score ../../../video_score
 # script to autostart terminal and disable lock screen
 sudo mkdir "/home/vagrant/.config/autostart"
 sudo cp SCORE.desktop /home/vagrant/.config/autostart/SCORE.desktop
