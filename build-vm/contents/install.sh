@@ -1,7 +1,7 @@
 #!/bin/bash
 
+sudo bash
 cd Desktop
-
 wget http://swtv.kaist.ac.kr/tools/score/SCORE-0.1.1
 
 tar jxf SCORE-0.1.1
@@ -41,16 +41,10 @@ cd examples
 cd ..
 
 cd bin
-sudo ./score_server -p 1000 &
+./score_server -p 1000 &
 
 cd ..
 cd examples
+../bin/score_client -i 10 -t ./simple -a 127.0.0.1 -p 1000 -o ./score-output
 
-sudo ../bin/score_client -i 10 -t ./simple -a 127.0.0.1 -p 1000 -o ./score-output
-
-sudo ../bin/print_testcase score-output/testcase_4.test 
-
-read -p "Press <Enter> to close window."
-
-
-
+../bin/print_testcase score-output/testcase_4.test 
