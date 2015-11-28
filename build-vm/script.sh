@@ -37,13 +37,6 @@ sudo rm -f "/usr/share/applications/libreoffice-writer.desktop"
 sudo rm -f "/usr/share/applications/libreoffice-impress.desktop"
 sudo rm -f "/usr/share/applications/ubuntu-software-center.desktop"
 
-# removing unwanted folders and files
-cd
-cd Desktop
-sudo rm -rf FSE-2011-SCORE
-sudo rm -rf lock.sh
-sudo rm -rf SCORE.desktop
-sudo rm -rf SCORE.lock
 
 # Reboot
 sudo reboot

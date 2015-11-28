@@ -2,6 +2,9 @@
 
 cd Desktop
 sudo rm -rf FSE-2011-SCORE
+sudo rm -rf lock.sh
+sudo rm -rf SCORE.desktop
+sudo rm -rf SCORE.lock
 wget http://swtv.kaist.ac.kr/tools/score/SCORE-0.1.1
 
 tar jxf SCORE-0.1.1
