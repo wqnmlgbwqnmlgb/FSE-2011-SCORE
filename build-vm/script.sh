@@ -6,10 +6,8 @@ sudo apt-get -y install git
 # Cloning repository to get all the scripts and other required files
 sudo git clone https://github.com/SoftwareEngineeringToolDemos/FSE-2011-SCORE.git
 cd FSE-2011-SCORE/build-vm/contents
-# Install Adobe Flash Player plugin to view youtube videos
-sudo apt-get install flashplugin-installer
 sudo chmod +x install.sh
-sudo chmod -R a+rwx lock.sh
+sudo chmod +x lock.sh
 
 # script to run the tool 
 sudo cp install.sh ../../../install.sh
