@@ -8,7 +8,7 @@ sudo cp install.sh ../../../install.sh
 sudo cp SCORE.desktop ../../../SCORE.desktop
 
 sudo mkdir "/home/vagrant/.config/autostart"
-sudo cp Desktop/SCORE.desktop /home/vagrant/.config/autostart/SCORE.desktop
+sudo cp SCORE.desktop /home/vagrant/.config/autostart/SCORE.desktop
 
 
 sudo reboot
