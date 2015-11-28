@@ -8,7 +8,6 @@ sudo git clone https://github.com/SoftwareEngineeringToolDemos/FSE-2011-SCORE.gi
 cd FSE-2011-SCORE/build-vm/contents
 sudo chmod +x install.sh
 sudo chmod +x lock.sh
-sudo chmod +x video_score.sh
 # script to run the tool 
 sudo cp install.sh ../../../install.sh
 
@@ -24,7 +23,7 @@ sudo cp README.txt ../../../README.txt
 
 sudo cp Installation.txt ../../../Installation.txt
 
-sudo cp video_score.sh ../../../video_score.sh
+sudo cp video_score.desktop ../../../video_score.desktop
 # script to autostart terminal and disable lock screen
 sudo mkdir "/home/vagrant/.config/autostart"
 sudo cp SCORE.desktop /home/vagrant/.config/autostart/SCORE.desktop
