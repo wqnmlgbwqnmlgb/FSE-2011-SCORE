@@ -34,6 +34,13 @@ This folder contains the files needed to build a virtual machine for SCORE using
 * password: *vagrant*
 * 
 
-#### Acknowledgement
+#### Acknowledgements:
 
-* https://docs.vagrantup.com/v2/provisioning/shell.html
+Used vagrant virtual box image of Ubuntu 14.04.
+
+#### References:
+
+Vagrant Documentation
+Ubuntu 14.04 Virtual Box
+https://docs.vagrantup.com/v2/provisioning/shell.html
+
