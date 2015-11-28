@@ -9,8 +9,7 @@ Vagrant.configure(2) do |config|
     vb.gui = true
     # Customize the amount of memory on the VM:
     vb.memory = "2048"
-	# Provide a name to the VM
-	vb.name = “Beaufort-sanaik2-SCORE”
+    # Provide a name to the VM
   end
    config.vm.provision :shell, path: "script.sh"
 end
