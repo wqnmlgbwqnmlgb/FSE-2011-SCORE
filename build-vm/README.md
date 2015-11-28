@@ -40,7 +40,7 @@ Used vagrant virtual box image of Ubuntu 14.04.
 
 #### References:
 
-Vagrant Documentation
-Ubuntu 14.04 Virtual Box
-https://docs.vagrantup.com/v2/provisioning/shell.html
+* Vagrant Documentation
+* Ubuntu 14.04 Virtual Box
+* https://docs.vagrantup.com/v2/provisioning/shell.html
 
