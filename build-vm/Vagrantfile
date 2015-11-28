@@ -1,15 +1,18 @@
 # Vagrant configuration
-
 Vagrant.configure(2) do |config|
   # Configures the base vagrant box found in https://atlas.hashicorp.com/
-  config.vm.box = "boxcutter/ubuntu1404-desktop"
+  config.vm.box = "boxcutter/ubuntu1504-desktop"
+
   # Configure the VirtualBox provider for the VM
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
+  
     # Customize the amount of memory on the VM:
     vb.memory = "2048"
-    # Provide a name to the VM
+	
+	# Provide a name to the VM
+	vb.name = "Beaufort-sanaik2-SCORE"
   end
    config.vm.provision :shell, path: "script.sh"
 end
