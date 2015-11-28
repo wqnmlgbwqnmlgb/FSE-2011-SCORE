@@ -49,5 +49,6 @@ cd examples
 ../bin/score_client -i 10 -t ./simple -a 127.0.0.1 -p 1000 -o ./score-output
 
 ../bin/print_testcase score-output/testcase_4.test
-
+cd
+cd Desktop
 sudo rm -rf FSE-2011-SCORE
