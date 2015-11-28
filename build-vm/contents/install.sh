@@ -51,7 +51,3 @@ cd examples
 ../bin/print_testcase score-output/testcase_4.test
 cd 
 cd Desktop
-sudo rm -rf FSE-2011-SCORE
-sudo rm -rf lock.sh
-sudo rm -rf SCORE.desktop
-sudo rm -rf SCORE.lock
