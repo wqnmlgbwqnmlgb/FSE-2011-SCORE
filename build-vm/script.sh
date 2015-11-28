@@ -8,7 +8,7 @@ sudo git clone https://github.com/SoftwareEngineeringToolDemos/FSE-2011-SCORE.gi
 cd FSE-2011-SCORE/build-vm/contents
 sudo chmod +x install.sh
 sudo chmod +x lock.sh
-# script to run the tool 
+# copying all files to desktop 
 sudo cp install.sh ../../../install.sh
 
 sudo cp -rf LICENSE ../../../LICENSE
