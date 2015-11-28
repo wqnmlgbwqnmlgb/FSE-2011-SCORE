@@ -1,0 +1,5 @@
+#!/bin/bash
+
+firefox -P 'Another Profile' &
+sleep 4
+firefox -new-tab 'http://youtu.be/bS-3pzrH9co?hd=1'
