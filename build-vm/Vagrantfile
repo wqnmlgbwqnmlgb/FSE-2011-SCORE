@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
     vb.memory = "2048"
 	
 	# Provide a name to the VM
-	vb.name = "Beaufort1-sanaik2-SCORE"
+	vb.name = "Beaufort-sanaik2-SCORE"
   end
    config.vm.provision :shell, path: "script.sh"
 end

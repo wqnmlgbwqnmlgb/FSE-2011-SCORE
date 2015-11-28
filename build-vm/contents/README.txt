@@ -16,7 +16,7 @@ SCORE (source code)
 Installation.txt
 README.txt (this)
 LICENSE
-video_score 
+Youtube-SCORE 
 install.sh
 
 
