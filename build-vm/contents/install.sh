@@ -1,9 +1,11 @@
 #!/bin/bash
 
 cd Desktop
+sudo rm -rf FSE-2011-SCORE
 wget http://swtv.kaist.ac.kr/tools/score/SCORE-0.1.1
 
 tar jxf SCORE-0.1.1
+
 
 sudo apt-get install -y gcc-multilib
 sudo apt-get install -y g++-multilib
@@ -46,4 +48,6 @@ cd ..
 cd examples
 ../bin/score_client -i 10 -t ./simple -a 127.0.0.1 -p 1000 -o ./score-output
 
-../bin/print_testcase score-output/testcase_4.test 
+../bin/print_testcase score-output/testcase_4.test
+
+sudo rm -rf FSE-2011-SCORE
