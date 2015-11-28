@@ -1,19 +1,24 @@
 You can get the latest version of SCORE, as well as news and announcements at
 SCORE's homepage: http://pswlab.kaist.ac.kr/tools/score
 
+STEPS TO RUN THE TOOL
+====================
+1. Open Terminal
+2. cd Desktop
+3. ./install.sh
+
+
+
 FOLDERS
 =======
 You will find the following files/folders on the Desktop:
-SCORE
+SCORE (source code)
 Installation.txt
 README.txt (this)
 LICENSE
 video_score 
+install.sh
 
-SETUP 
-=====
-
-Follow the steps in the Installation.txt on the Desktop to get started.
 
 VIDEO
 =====

@@ -1,0 +1,68 @@
+Please follow all the numbered( & alphabetical) bullet points
+Lines marked in # are the comments
+
+source: http://swtv.kaist.ac.kr/tools/score/score-tutorial
+Download: http://swtv.kaist.ac.kr/tools/score/socre-download
+
+RUNNING SCORE 
+==============
+
+1. Open the terminal
+
+#setting path
+a. export PATH=/usr/lib:$PATH
+b. export PATH=/usr/local/lib:$PATH
+
+c. cd SCORE-0.1.1
+
+d. export PATH=`pwd`/bin:$PATH
+e. export LD_LIBRARY_PATH=`pwd`/lib
+
+2. cd cil
+
+3. make clean
+
+4. ./configure
+
+5. make 
+
+6. cd ..
+
+7. cd examples
+
+#compiling target code
+8. ../bin/scorec simple.c
+#This generates two files: branches and simple(executable)
+
+9. cd ..
+
+10. cd bin
+
+#running score server program
+11. sudo ./score_server -p 1000
+
+password:score
+
+---------------------------------------------------------------
+# For client
+12. Open another terminal
+
+#setting paths
+a. export PATH=/usr/lib:$PATH
+b. export PATH=/usr/local/lib:$PATH
+
+c. cd SCORE-0.1.1
+
+d. export PATH=`pwd`/bin:$PATH
+e. export LD_LIBRARY_PATH=`pwd`/lib
+
+13. cd examples
+
+#running target program
+14. ../bin/score_client -i 10 -t ./simple -a 127.0.0.1 -p 1000 -o ./score-output
+
+#score-output has the generated test cases
+
+#reading test cases
+15. ../bin/print_testcase score-output/testcase_4.test 
+
