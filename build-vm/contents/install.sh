@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo bash
 cd Desktop
 wget http://swtv.kaist.ac.kr/tools/score/SCORE-0.1.1
 
