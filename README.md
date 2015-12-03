@@ -13,7 +13,7 @@ In this repository, for SCORE you will find:
 * :white_check_mark: [Source code](https://github.com/SoftwareEngineeringToolDemos/FSE-2011-SCORE/tree/master/SCORE-0.1.1)
 * :x: Binaries
 * :x: The original tool
-* :white_check_mark: [Virtual machine containing tool](https://drive.google.com/open?id=0B6epr-M7ttZGdDVWZ1FLS1QwYlk)
+* :white_check_mark: [Virtual machine containing tool](https://drive.google.com/open?id=0B6epr-M7ttZGS1ZTRlYza2M2dE0)
 
 This repository was constructed by [Shraddha Naik](https://github.com/Shraddha512) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Yunho Kim for his help. 
 
