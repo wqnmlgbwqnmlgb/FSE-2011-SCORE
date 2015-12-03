@@ -7,7 +7,6 @@ This repository contains information related to the tool SCORE presented in the 
 
 This repository _is not_ the original repository for this tool. Here are some links to the original project:
 * [The Official Project Page](http://swtv.kaist.ac.kr/tools/score), does not include source code
-* [A Video of the Tool]()
 
 In this repository, for SCORE you will find:
 * :white_check_mark: [Source code](https://github.com/SoftwareEngineeringToolDemos/FSE-2011-SCORE/tree/master/SCORE-0.1.1)
