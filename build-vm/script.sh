@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd Desktop
+cd /home/vagrant/Desktop
 # Installing git
 sudo apt-get -y install git
 # Cloning repository to get all the scripts and other required files
