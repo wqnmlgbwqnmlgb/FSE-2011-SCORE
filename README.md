@@ -1,6 +1,6 @@
 # FSE-2011-SCORE
 Scalable COncolic testing for REliable Software
-
+//#### embeded c program
 ***
 
 This repository contains information related to the tool SCORE presented in the FSE, 2011. The tool was originally presented in [this paper](http://dl.acm.org/citation.cfm?id=2025180).
